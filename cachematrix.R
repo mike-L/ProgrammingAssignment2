@@ -38,8 +38,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve is a function which takes an instance of the makeCacheMatrix function
 ## which has been run on a given matrix. It checks if the inverse has already 
-## been calculated and returns the cached inverse if available. If a cached inverse
-## is not available, it will calculate one and then cache this for future use.
+## been cached in the makeCacheMatrix environment and returns the cached inverse 
+## if available. If a cached inverse is not available, it will calculate one 
+## and then cache this for future use.
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
